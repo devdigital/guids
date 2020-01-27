@@ -1,0 +1,21 @@
+{
+  "name": "guids",
+  "version": "0.1.0",
+  "description": "Generate guids",
+  "source": "src/index.js",
+  "main": "dist/guids.js",
+  "module": "dist/guids.mjs",
+  "repository": "https://github.com/devdigital/guids.git",
+  "author": "devdigital <devdigital.cloud@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "bin": {
+    "guids": "dist/guids.js"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
