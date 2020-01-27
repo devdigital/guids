@@ -10,12 +10,14 @@
   "license": "MIT",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "release": "standard-version"
   },
   "bin": {
     "guids": "dist/guids.js"
   },
   "devDependencies": {
-    "microbundle": "^0.11.0"
+    "microbundle": "^0.11.0",
+    "standard-version": "^7.1.0"
   }
 }
