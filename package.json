@@ -1,6 +1,6 @@
 {
   "name": "guids",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Generate guids",
   "source": "src/index.ts",
   "main": "dist/guids.js",
