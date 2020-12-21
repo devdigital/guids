@@ -2,16 +2,16 @@
   "name": "guids",
   "version": "0.1.4",
   "description": "Generate guids",
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "dist/guids.js",
-  "module": "dist/guids.mjs",
   "repository": "https://github.com/devdigital/guids.git",
   "author": "devdigital <devdigital.cloud@gmail.com>",
   "license": "MIT",
   "scripts": {
     "prepare": "yarn build",
-    "build": "microbundle",
-    "watch": "microbundle watch",
+    "build": "microbundle -f cjs",
+    "watch": "microbundle -f cjs watch",
+    "start": "ts-node ./src/index.ts",
     "test": "echo test",
     "release": "standard-version"
   },
@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "microbundle": "^0.12.4",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "ts-node": "^9.1.1"
   },
   "dependencies": {
     "clipboardy": "^2.3.0",
